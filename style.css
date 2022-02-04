@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+    height: 1000px;
+}
+main{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    padding-bottom: 70px;
+    text-align: center;
+}
+header h4{
+    font-weight: 300;
+    color: var(--Very-Dark-Blue);
+    font-size: 19px;
+}
+h2{
+    font-weight: 500;
+    font-size: 19px;
+    opacity: 0.8;
+    padding-bottom: 10px;
+}
+p {
+    color: var(--Grayish-Blue);
+    padding-bottom: 30px;
+    font-size: 15px;
+    line-height: 1,4;
+}
+article{
+    max-width: 22rem;
+    padding: 30px;
+    border-radius: 5px;
+    min-height: 17rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+article img{
+    float: right;
+    margin-top: 10%;
+    margin-right: 30px;
+}
+#a1{
+    border-top: 4px solid var(--Cyan);
+}
+#a2{
+    border-top: 4px solid var(--Red);
+}
+#a3{
+    border-top: 4px solid var(--Orange);
+}
+#a4{
+    border-top: 4px solid var(--Blue);
+}
+@media only screen and (min-width: 1500px) {
+    /* For desktop: */
+    header{
+        width: 35%;
+    }
+    header h4 , header h2 {
+        font-size: 5vh;
+    }
+    .main-article{
+        display: flex;
+    }
+    article{
+        position: absolute;
+    }
+    #a1{
+        left: 10rem;
+        top: 25rem;
+    }
+    #a2{
+        top: 18rem;
+        left: 38rem;
+    }
+    #a4{
+        top: 25rem;
+        right: 10rem;
+    }
+    #a3{
+        top: 40rem;
+        left: 38rem;
+    }
+}
+@media only screen and (min-width: 768px){
+    header{
+        width: 35%;
+    }
+    header h4 , header h2 {
+        font-size: 5vh;
+    }
+    .main-article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
